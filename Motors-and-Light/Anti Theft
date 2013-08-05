@@ -5,7 +5,7 @@ void setup()
 void loop()
 {
   digitalWrite(13,HIGH);
-  delay(100);//Don't brick your arduino
+  delay(20);//Don't brick your arduino
   digitalWrite(13,LOW);
-  delay(2000);//Don't brick your arduino
+  delay(20);//Don't brick your arduino
 }
