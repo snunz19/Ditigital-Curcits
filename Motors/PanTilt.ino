@@ -20,19 +20,20 @@ void loop()
       command = Serial.parseInt();
       if (command  == 1 )
       {
-      
+            scanUp(10,180,10);
+       scanUp(50,180,100);
       }
       if (command == 0)
       {
-      
+       pikachiu.write(90);
       }
   }
   delay(10);
 }
 
-void scanUp(int begin, int end, int slowness)
+void scanUp(int thebegin, int theend, int slowness)
 {
-  for(int i = begin ; i < end; i++)
+  for(int i = thebegin ; i < theend; i++)
   {
   pikachiu.write(i);
   delay(slowness);
