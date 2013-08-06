@@ -1,6 +1,16 @@
 Motors and Lights
 =================
 #Code from day 1 and 2 from Digital Curcits for lights and motors
+```arduino
+void setup()
+{
+
+}
+void loop()
+{
+delay(10);
+}
+```
 ##Lights
 <p align "center">
 <img src = http://upload.wikimedia.org/wikipedia/commons/c/cb/RBG-LED.jpg>
