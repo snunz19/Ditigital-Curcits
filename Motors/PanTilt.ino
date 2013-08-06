@@ -38,5 +38,12 @@ void scanUp(int begin, int end, int slowness)
   delay(slowness);
   
   }
+  void scanDown(int begin, int end, int slowness)
+{
+  for(int i = begin ; i > end; i--)
+  {
+  pikachiu.write(i);
+  delay(slowness);
   
+  }
 }
