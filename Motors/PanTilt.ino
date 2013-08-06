@@ -23,9 +23,10 @@ void loop()
             scanUp(10,180,10);
        scanUp(50,180,100);
       }
-      if (command == 0)
+     if (command > 1)
       {
-       pikachiu.write(90);
+      pikachiu.write(command);
+
       }
   }
   delay(10);
