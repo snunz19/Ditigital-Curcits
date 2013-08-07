@@ -1,0 +1,21 @@
+#include <Servo.h>
+
+Servo Pan;
+Servo Tilt;
+int storage2;
+int storage;
+int pos; 
+int pos2;
+void setup()
+{
+ Pan.attach(9);
+Tilt.attach(10); 
+Serial.begin(9600);
+}
+
+void loop()
+{
+  Pan.write(analogRead(A0));
+Tilt.write(analogRead(A1));
+delay(10);                                
+}
