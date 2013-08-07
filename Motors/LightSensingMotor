@@ -1,0 +1,26 @@
+#include <Servo.h>
+
+Servo pikachiu;
+Servo Garfield;
+int storage2;
+int storage;
+int pos; 
+int pos2;
+void setup()
+{
+ pikachiu.attach(9);
+Garfield.attach(10); 
+Serial.begin(9600);
+}
+
+void loop()
+{
+  storage = analogRead(A0);
+   storage2 = analogRead(A0);
+  pos2 = map(storage2,800,1000,0,180);
+  pos = map(storage,800,1000,0,180);
+   Serial.println(pos);
+ pikachiu.write(pos);
+Garfield.write(pos2);
+delay(50);                                
+}
